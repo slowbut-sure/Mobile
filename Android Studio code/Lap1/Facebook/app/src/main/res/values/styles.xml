@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Các thuộc tính khác -->
+        <item name="android:textColorLink">#000000</item> <!-- Đổi màu của gạch chân thành màu đen -->
+    </style>
+    <style name="ButtonStyle">
+        <item name="android:background">#F5F5F5</item>
+    </style>
+</resources>

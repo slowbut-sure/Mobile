@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".lap3_2Activity">
+
+    <!-- Button Them -->
+    <Button
+        android:id="@+id/buttonThem"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:text="Thêm"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/buttonCapNhat"
+        app:layout_constraintHorizontal_bias="0.5"
+        tools:ignore="MissingConstraints" />
+
+    <!-- Button CapNhat -->
+    <Button
+        android:id="@+id/buttonCapNhat"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:text="Cập nhật"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/buttonThem"
+        app:layout_constraintEnd_toStartOf="@+id/buttonXoa"
+        app:layout_constraintHorizontal_bias="0.5"
+        tools:ignore="MissingConstraints" />
+
+    <!-- Button Xoa -->
+    <Button
+        android:id="@+id/buttonXoa"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:text="Xóa"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/buttonCapNhat"
+        app:layout_constraintEnd_toStartOf="@+id/buttonTaiAnh"
+        app:layout_constraintHorizontal_bias="0.5"
+        tools:ignore="MissingConstraints" />
+
+    <!-- Button TaiAnh -->
+    <Button
+        android:id="@+id/buttonTaiAnh"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:text="Tải ảnh lên"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/buttonXoa"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        tools:ignore="MissingConstraints" />
+
+    <!-- ImageView -->
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="117dp"
+        android:layout_height="107dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonTaiAnh"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <!-- EditText Ten -->
+    <EditText
+        android:id="@+id/etTen"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:hint="Tên"
+        android:inputType="text"
+        android:textColor="#00FFFF"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5" />
+
+    <!-- EditText Mota -->
+    <EditText
+        android:id="@+id/etMota"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:hint="Mô tả"
+        android:inputType="text"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/etTen"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5" />
+
+    <!-- ListView TraiCay -->
+    <ListView
+        android:id="@+id/lvtraicay"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etMota"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
